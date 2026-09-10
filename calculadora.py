@@ -24,10 +24,10 @@ ventana = Tk()
 ventana.title("Calculadora")
 ventana.geometry("400x600")
 ventana.iconbitmap("calculadora.ico")
-ventana.configure(background="#0833a2")
-color_boton = "#3B3B3B"
-ancho_boton = 10
-alto_boton = 5
+ventana.configure(background="#0a0e27")
+color_boton = "#00d9ff"
+ancho_boton = 9
+alto_boton = 3
 input_text = StringVar()
 operador = ""
 Salida = Entry(
@@ -37,7 +37,7 @@ Salida = Entry(
     textvariable=input_text,
     bd=10,
     insertwidth=200,
-    background="#202020",
+    background="#162541",
     justify="center"
 )
 Salida.place(x=20, y=20)
