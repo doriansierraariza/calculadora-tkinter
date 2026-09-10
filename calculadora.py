@@ -28,6 +28,7 @@ ventana.configure(background="#0a0e27")
 color_boton = "#00d9ff"
 ancho_boton = 9
 alto_boton = 3
+ancho_boton_igual = 36
 input_text = StringVar()
 operador = ""
 Salida = Entry(
@@ -61,7 +62,7 @@ Button(ventana,text="0",background=color_boton,width=ancho_boton,height=alto_bot
 Button(ventana,text=".",background=color_boton,width=ancho_boton,height=alto_boton,command=lambda:btnClik(".")).place(x=103,y=420)
 Button(ventana,text="EXP",background=color_boton,width=ancho_boton,height=alto_boton,command=lambda:btnClik("**")).place(x=190,y=420)
 Button(ventana,text="+",background=color_boton,width=ancho_boton,height=alto_boton,command=lambda:btnClik("+")).place(x=277,y=420)
-Button(ventana,text="=",background=color_boton,width=ancho_boton,height=alto_boton,command=resultado).place(x=16,y=500)
+Button(ventana,text="=",background=color_boton,width=ancho_boton_igual,height=alto_boton,command=resultado).place(x=16,y=500)
 
 clear()
 ventana.mainloop()
